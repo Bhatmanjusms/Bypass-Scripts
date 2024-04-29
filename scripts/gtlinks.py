@@ -22,8 +22,8 @@ async def gtlinks(url: str) -> str:
                 try:
                     json_data['url']
                 except:
-                     print("Something Went wrong")
+                   return "Something Went wrong"
 
 #Usage Example
 # url = "https://gtlinks.me/JysE0s74m"
-# await gyanilinks(url)
+# print(await gyanilinks(url))
