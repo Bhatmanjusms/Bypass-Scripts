@@ -21,7 +21,9 @@ async def rocklinks(url):
                 if 'application/json' in resp.headers.get('Content-Type'):
                     json_data = await resp.json()
                     return json_data['url']
+                else:
+                    return "Something Went Wrong :("
 
 #Usage example
 # url = "https://go.rocklinks.net/vb6nD"
-# await rocklinks(url)
+# print(await rocklinks(url))
